@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page 2</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">                    <!--AOS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">  <!--ICONS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+
+  <style>
+
+    *{
+      font-family: "Moderustic, sans-serif";
+    }
+
+      body {
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+
+      .navbar-nav {
+        justify-content: center; 
+        padding: 1px;
+      }
+
+      .nav-link {
+        font-size: 2.5rem;
+        text-decoration: none;
+      }
+
+      .btn-contact {
+        font-size: 1rem;
+      }
+
+      .nav-item.dropdown:hover .dropdown-menu {
+        display: block; 
+        margin-top: 0;
+      }
+
+      .dropdown-menu {
+        transition: all 0.1s ease-in-out; 
+        margin-top: -5px; 
+      }
+
+      .custom-button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        border-width: 2px;
+        font-weight: bold; 
+    }
+
+      .custom-dropdown {
+        min-width: 100px; 
+        font-size: 1.25rem;
+        border-radius: 10px; 
+      }
+        
+      .custom-dropdown .dropdown-item {
+        padding: 10px 15px; 
+        font-size: 1.8rem; 
+      }
+
+      
+      .resize-img img {
+        width: 100%; 
+        height: 600px; 
+        object-fit: cover; 
+        position: relative;
+        top: -20px;
+      }
+
+      .mask {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .nav-link:hover {
+        text-decoration: none; 
+      }
+
+      
+
+    
+
+        .custom-font-size{
+            font-size: 50px;
+        }
+
+        .home21{
+            border-radius: 15px;
+        }
+
+        .home22{
+            border-radius: 15px;
+            height: 50rem;
+            width: 70rem;
+        }
+
+        .home23{
+          width: 70rem;
+          border-radius: 20px;
+        }
+
+        .home24{
+            height: 40rem;
+            width: 70rem;
+        }
+
+        .marquee-text {
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 1px rgb(17, 16, 16);
+            font-size: 100px;
+            font-weight: 700;
+            
+          }
+
+          .custom-button {
+            font-size: 1.5rem;
+            padding: 10px 20px;
+            border-width: 2px;
+            font-weight: bold; 
+        }
+
+        .team img {
+
+          width: 25rem;
+          height: 30rem;
+        }
+
+        .team{
+          border: 1px solid rgb(220, 216, 216);
+          border-radius: 20px;
+         
+        }
+
+          
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgb(8, 8, 8); 
+          width: 50px; 
+          height: 50px; 
+          border-radius: 50%; 
+          background-size: 70%; 
+        }
+      
+        .carousel-control-prev-icon:hover,
+        .carousel-control-next-icon:hover {
+          background-color: rgb(8, 8, 8); 
+        }
+
+        
+          .carousel-control-prev,
+          .carousel-control-next {
+            position: absolute;
+            top: 50%; 
+            transform: translateY(-50%);
+            width: 50px; 
+            height: 50px;
+          }
+        
+          .carousel-control-prev {
+            right: 60px; 
+            left: auto; 
+            padding-bottom: 400px;
+          }
+        
+          .carousel-control-next {
+            right: 10px; 
+            padding-bottom: 400px;
+          }
+        
+         
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5); 
+            border-radius: 50%;
+            
+          }
+
+
+          .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; 
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            border: 0;
+        }
+
+        /*TEAM*/
+
+          .teams {
+            margin: 20px;
+          }
+          
+          .team {
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            padding: 20px;
+            text-align: center; 
+          }
+          
+          .team img {
+            max-width: 100%; 
+            height: auto;
+            
+          }
+          
+          .team h1 {
+            font-size: 18px;
+            margin: 10px 0 5px; 
+          }
+          
+          .team h6 {
+            font-size: 14px; 
+            color: #666;
+          }
+
+          
+            .team {
+                margin-bottom: 20px; 
+            }
+
+            .share {
+              position: relative;
+            }
+            
+            .share .social-icons {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              bottom: 50px;
+              opacity: 0;
+              transform: translateY(20px);
+              transition: all 0.3s ease-in-out;
+            }
+            
+            .share:hover .social-icons {
+              opacity: 1;
+              transform: translateY(0);
+            }
+            
+            .social-icons a {
+              text-decoration: none;
+              margin: 5px 0;
+              padding: 10px;
+              color: white;
+              border-radius: 5px;
+              text-align: center;
+              background-color: #060606;
+              transition: background-color 0.3s;
+            }
+            
+            .share-btn {
+              background: black;
+              color: white;
+              padding: 10px 15px;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            }
+            
+            .youtube {
+              background-color: red;
+            }
+            
+            .twitter {
+              background-color: #1DA1F2;
+            }
+            
+            .facebook {
+              background-color: #3b5998;
+            }
+
+
+            .bg-dark:hover {
+              background-color: #050505; /* Slightly lighter dark gray */
+              transition: background-color 0.3s ease;
+            }
+
+            .num{
+              font-weight: bold;
+              color: gray;
+              font-size: 90px;
+              font-weight: 700;
+              opacity: 0.5;
+            }
+
+            .sticky-section {
+              position: sticky;
+              top: 0;
+              background: white;
+              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+              border-radius: 20px;
+              border: 1px solid rgb(230, 221, 221);
+          }
+          
+            
+
+
+
+
+          
+
+
+
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            footer {
+              background-color: black;
+              padding-top: 40px;
+              border-radius: 15px;
+            }
+            
+            
+            .custom-input::placeholder {
+              color: white;
+              opacity: 1;
+            }
+            
+            
+            .custom-input {
+              width: 100%;
+              max-width: 350px;
+              padding: 10px;
+              font-size: 15px;
+            }
+        
+           
+            footer h1 {
+              font-size: 24px;
+              line-height: 1.5;
+            }
+            
+            footer h3 {
+              font-size: 20px;
+              margin-bottom: 15px;
+            }
+            
+            footer a {
+              color: rgb(192, 16, 16);
+              
+            }
+            
+            
+            
+            
+            @media (max-width: 768px) {
+              .custom-input {
+                width: 100%;
+              }
+            
+              .btn {
+                width: 100%;
+              }
+            
+              footer h1 {
+                font-size: 20px;
+              }
+            }
+
+
+
+           
+        
+            
+        
+          
+       
+        
+        
+  </style>
+    
+</head>
+<body>
+
+
+   <!-- NAVIGATION -->
+
+   <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid mb-0">
+        <img src="{% static 'image/logo.png' %}" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 ms-5 mt-5 mb-lg-0">
+                <li class="nav-item dropdown me-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Home
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a class="dropdown-item" href="{% url 'home1' %}">Home Page 1</a></li>
+                        <li><a class="dropdown-item" href="{% url 'home2' %}">Home Page 2</a></li>
+                        <li><a class="dropdown-item" href="{% url 'home3' %}">Home Page 3</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a class="dropdown-item" href="{% url 'aboutus' %}">About Us</a></li>
+                        <li><a class="dropdown-item" href="{% url 'ourteam' %}">Our Team</a></li>
+                        <li><a class="dropdown-item" href="{% url 'pricingplan' %}">Pricing Plan</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link" href="{% url 'service' %}">Services</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link" href="{% url 'project' %}">Projects</a>
+                </li>
+                <li class="nav-item dropdown me-5">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown">
+                        <li><a class="dropdown-item" href="{% url 'blog1' %}">Blog 1</a></li>
+                        <li><a class="dropdown-item" href="{% url 'blog2' %}">Blog 2</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <a href="{% url 'contact' %}" class="text-decoration-none">
+                  <button class="btn btn-outline-dark custom-button mt-5 rounded-pill d-none d-lg-block" type="button" style="font-size: 19px;">
+                      Contact Us
+                  </button>
+              </a>
+            </form>
+        </div>
+    </div>
+   </nav>
+  
+  <!-- HOME IMAGE -->
+   
+  <div class="position-relative resize-img">
+
+    <img src="{% static 'image/home2.jpg' %}" alt="Home Image" style="border-radius: 15px;">
+    
+
+    <div class="mask text-light d-flex flex-column justify-content-start align-items-center  p-4 mt-5">
+      <div class="container">
+          <h3 style="font-size: 28px;">Constructing an Improved Future</h3>
+          <h1 class=" fw-bolder" style="font-size: 70px;">Architecture that<br> recognizes </h1>
+          <h1 class=" fw-bolder" style="font-size: 70px;">your sensibilities.</h1>
+          <a href="{% url 'contact' %}" style="text-decoration: none;"><button class="btn btn-outline-light custom-button mt-5 rounded-pill d-none d-md-block" type="button">Take a Look</button></a>
+      </div>
+    </div>
+  
+  </div> 
+
+  <div style="margin-top: 100px;"></div>
+
+
+    
+
+        <!--MANS-->
+
+        <div class="container-fluid d-flex align-items-center" data-aos="fade-up">
+            <div class="row">
+
+                <!--COLUMN 1-->
+
+                <div class="col-lg-3 text-center">
+                    <img src="{% static 'image/scale.png' %}" alt="Award 1" class="img-fluid home21 d-none d-lg-block">
+                    <div style="margin-top: 100px;"></div>
+                    <img src="{% static 'image/man.png' %}" alt="Award 1" class="img-fluid home22">
+                </div>
+
+                <!--COLUMN 2-->
+
+                <div class="col-lg-6 text-center">
+
+                    <div class="container" style="background-color: rgba(248,248,248,255); height:89rem;border-radius:20px;" >
+                        <div class="text-center mt-5">
+                          <h5 class="rounded-pill p-2 mt-5 fw-bold" style="background-color: rgb(211, 203, 203); width: 90px;margin: 0 auto;  letter-spacing: 1px;">
+                            SINCE 1986
+                          </h5>
+                          <div style="margin-top: 20px;"></div>
+                          <h1 class="custom-font-size fw-bold">We believe innovation is the</h1>
+                          <h1 class="custom-font-size fw-bold">key to build a better future</h1>
+                          <h1 class="custom-font-size fw-bold">for our people.</h1>
+                          <div style="margin-top: 40px;"></div>
+                          <p style="font-size: 20px;">There is a need for a directing order of activity that, while bringing out the human energies, won’t endure them to be squandered.</p>
+                          <div style="margin-top: 40px;"></div>
+
+                          <div>
+                            <div class="d-flex  justify-content-evenly">
+                                <div class="d-flex  align-items-center ">
+                                    <img src="{% static 'image/mann1.png' %}" alt="Award 1" class="img-fluid">
+                                    <h1>Commercial</h1>
+                                </div>
+                                <div class="d-flex  align-items-center">
+                                    <img src="{% static 'image/mann2.png' %}" alt="Award 1" class="img-fluid">
+                                    <h1>Industrial</h1>
+                                </div>
+                            </div>
+                          </div>
+                          
+                          <div style="margin-top: 30px;"></div>
+
+                        <div class="d-flex justify-content-evenly">
+                            <div class="d-flex  align-items-center">
+                                <img src="{% static 'image/mann3.png' %}" alt="Award 1" class="img-fluid">
+                                <h1>Residential</h1>
+                            </div>
+                            <div class="d-flex  align-items-center">
+                                <img src="{% static 'image/mann4.png' %}" alt="Award 1" class="img-fluid">
+                                <h1>Coporate</h1>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 40px;"></div>
+
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <img src="{% static 'image/sign.png' %}" alt="Sign" class="img-fluid sign">
+                        </div>
+
+                       </div>
+                
+                
+                
+                
+                       
+                </div>
+
+                <!--COLUMN 3-->
+                <div class="col-lg-3 text-center">
+                    <img src="{% static 'image/man1.png' %}" alt="Award 1" class="img-fluid d-none d-lg-block home23">
+                    <div style="margin-top: 70px;"></div>
+                    <img src="{% static 'image/man2.jpg' %}" alt="Award 1" class="img-fluid home24">
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 100px;"></div>
+
+        <!--STICKY-->
+
+        <div class="container-fluid"  data-aos="fade-up">
+          <div class="row">
+            
+            <!-- Left Column-->
+          <div class="col-lg-5 pe-5 position-sticky" style="top: 0; height: 60vh; background-color: white;">
+            <div class="mt-5 " data-aos="fade-up">
+              <h5 class="rounded-pill p-1 mt-5 ps-3 fw-bold" style="background-color: rgb(211, 203, 203); width: 90px; letter-spacing: 1px;">
+                SERVICES
+              </h5>
+              <h1 class="custom-font-size fw-bold">The affordable, </h1>
+              <h1 class="custom-font-size fw-bold">sustainable beauty</h1>
+              <h1 class="custom-font-size fw-bold">exist architects.</h1>
+              <p class="h1" style="color: grey; font-size:15px; line-height:30px;">
+                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labo et dolo cupidatat non proident, 
+                sunt in culpa qui officia deserunt anim id est laborum.
+              </p>
+              <form role="search">
+                <a href="{% url 'ourteam' %}" class="text-decoration-none">
+                  <button class="btn btn-outline-dark custom-button rounded-pill mt-5 ms-5 d-none d-md-none" type="button">
+                    View All
+                  </button>
+                </a>
+              </form>
+            </div>
+          </div>
+
+      
+            <!-- Right Column (Form) -->
+            <div class="col-lg-7" data-aos="fade-right">
+
+              <!--PHOTO 1-->
+              <div class="sticky-section p-5" style="z-index: 1;">
+                  <div class="row">
+                      <div class="col">
+                          <img src="{% static 'image/sticky1.png' %}" alt="sticker">
+                      </div>
+                      <div class="col">
+                          <div class="d-flex justify-content-evenly mt-5">
+                              <p class="h4 fw-bold" style="font-size: 29px;">Sustainable Building</p>
+                              <p class="fw-light ms-5 num">01</p>
+                          </div>
+                          <hr>
+                          <div>
+                              <p class="h2 mt-5">Our nurtures and strives to achieve innovation, creativity, and legal expertise</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!--PHOTO 2-->
+              <div class="sticky-section  p-5" style="z-index: 2;">
+                  <div class="row">
+                      <div class="col">
+                          <img src="{% static 'image/sticky2.png' %}" alt="sticker">
+                      </div>
+                      <div class="col">
+                          <div class="d-flex justify-content-evenly mt-5">
+                              <p class="h4 fw-bold" style="font-size: 29px;">Renovation & Remodelling</p>
+                              <p class="fw-light ms-5 num">02</p>
+                          </div>
+                          <hr>
+                          <div>
+                              <p class="h2 mt-5">Our nurtures and strives to achieve innovation, creativity, and legal expertise</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!--PHOTO 3-->
+              <div class="sticky-section p-5" style="z-index: 3;">
+                  <div class="row">
+                      <div class="col">
+                          <img src="{% static 'image/sticky3.png' %}" alt="sticker">
+                      </div>
+                      <div class="col">
+                          <div class="d-flex justify-content-evenly mt-5">
+                              <p class="h4 fw-bold" style="font-size: 29px;">Designing and Planning</p>
+                              <p class="fw-light ms-5 num">03</p>
+                          </div>
+                          <hr>
+                          <div>
+                              <p class="h2 mt-5">Our nurtures and strives to achieve innovation, creativity, and legal expertise</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <!--PHOTO 4-->
+              <div class="sticky-section  p-5" style="z-index: 4;">
+                  <div class="row">
+                      <div class="col">
+                          <img src="{% static 'image/sticky4.png' %}" alt="sticker">
+                      </div>
+                      <div class="col">
+                          <div class="d-flex justify-content-evenly mt-5">
+                              <p class="h4 fw-bold" style="font-size: 29px;">Project Management</p>
+                              <p class="fw-light ms-5 num">04</p>
+                          </div>
+                          <hr>
+                          <div>
+                              <p class="h2 mt-5">Our nurtures and strives to achieve innovation, creativity, and legal expertise</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+          </div>
+          
+          
+          </div>
+        </div>
+
+        <div style="margin-top: 100px;"></div>
+
+        <!--MARQUEE-->
+
+        <div class="mt-5" >
+            <marquee behavior="scroll" direction="left" scrollamount="10">
+              <div style="font-family: Roboto;">
+                <h1 class="marquee-text"> <img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE <img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE<img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE <img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE<img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE<img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE<img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE<img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE <img src="{% static 'image/star.png' %}"> CHANGING ROOM <img src="{% static 'image/star.png' %}"> LOUNGE CAFE</h1>
+              </div>
+            </marquee>
+          </div>
+
+        <div style="margin-top: 100px;"></div>
+
+
+
+          <!--YEARS-->
+
+          <div class="container-fluid mt-5" data-aos="fade-up">
+            <h6 class="rounded-pill p-1 mt-5 d-flex justify-content-center fw-bold" style="background-color: rgb(211, 203, 203); width: 100px; letter-spacing: 1px;">
+              THE PROCESS
+            </h6>
+            <h1 class="custom-font-size fw-bold">Meet our studio in</h1>
+            <h1 class="custom-font-size fw-bold">numbers:</h1>
+          </div>
+
+          
+
+          <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel" data-aos="fade-up">
+            <div class="carousel-inner py-5"> 
+              <div class="carousel-item active" data-bs-interval="5000">
+                <div class="row m-5 year">
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2005</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1" >Create a company<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color: rgb(114, 110, 110);font-family: Roboto;">Our company Arcpro was created.</h1>
+                    </div>
+      
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2012</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">Launch a New Project<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color:  rgb(114, 110, 110);font-family: Roboto;";>We launched our first project.</h1>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2015</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">Launch a Website<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color:  rgb(114, 110, 110);font-family: Roboto;";>Website was launced for the online clients.</h1>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2017</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">Strategic Planning<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h3 style="color:  rgb(114, 110, 110);font-family: Roboto;";>Teams were appointed for planning.</h3>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row m-5 year">
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2018</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">Professional Branding<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color:  rgb(114, 110, 110)">Unique Brand was created.</h1>
+                    </div>
+      
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2020</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">Construction Records<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color:  rgb(114, 110, 110)";>Huge number of Constructions were build.</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2022</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">New Creative Team<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color:  rgb(114, 110, 110)";>Many team members were joined for creative designs.</h6>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3">
+                    <h1 style="color: rgb(179, 175, 175);">2024</h1>
+                    <div style="margin-top: 20px;"></div>
+                    <div class="d-flex justify-content-center align-items-center">
+                      <div style="width: 6px; height: 5px; background-color: rgb(20, 19, 19);" class="rounded-circle"></div>
+                      <div style="width: 420px; height: 2px; background-color: rgb(20, 19, 19); " class="ms-2"  ></div>
+                    </div>
+      
+                    <div style="margin-top: 30px;"></div>
+                    <div class="pe-5">
+                      <p class="h1">Best Architect Award<p>
+                      <div style="margin-top: 20px;"></div>
+                      <h1 class="h3" style="color:  rgb(114, 110, 110)";>We are proud to gain this title.</h1>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark" aria-hidden="true" ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
+
+          <div style="margin-top: 100px;"></div>
+
+
+          <!--MESSAGE-->
+
+          <div class="message d-flex align-items-center justify-content-center" data-aos="fade-up" style="gap: 1rem;">
+            <h4 class="rounded-pill p-2 text-white" style="background-color: rgb(23, 21, 21); margin: 0;font-family: Roboto;">
+                Hurry
+            </h4>
+            <h5 style="color: darkgrey; margin: 0; font-family: Roboto; font-size:17px">
+                Let's make something great work together. <a href="{% url 'contact' %}" style="color: black;font-family: Roboto;">Got a project in mind?</a>
+            </h5>
+           </div>
+
+
+          <div style="margin-top: 100px;"></div>
+
+            
+
+            <!-- STICKERS -->
+
+
+          <div class="text-center sticker" data-aos="fade-up">
+            <div class="row">
+              <div class="col" >
+                <img src="{% static 'image/sticker1.png' %}" alt="sticker">
+                <img src="{% static 'image/sticker2.png' %}" alt="sticker">
+                <img src="{% static 'image/sticker3.png' %}" alt="sticker">
+                <img src="{% static 'image/sticker4.png' %}" alt="sticker">
+                
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="{% static 'image/sticker6.png' %}" alt="sticker">
+                <img src="{% static 'image/sticker7.png' %}" alt="sticker">
+                <img src="{% static 'image/sticker8.png' %}" alt="sticker">
+                <img src="{% static 'image/sticker9.png' %}" alt="sticker">
+                
+              </div>
+            </div>
+        
+              </div>
+    
+              <div style="margin-top: 100px;"></div>
+
+
+            <!--VIDEO-->
+
+            <div class="video-container" data-aos="fade-up">
+              <iframe 
+                  src="https://www.youtube.com/embed/d4DP8cSXUIQ?si=ZQgYz48g_o4TOORa" 
+                  title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" 
+                  allowfullscreen>
+              </iframe>
+          </div>
+
+
+            <!--TEAM-->
+
+
+           <div class="row" data-aos="fade-up">
+                <div class="col-md-6 container-fluid mt-5 d-flex justify-content-start ps-5">
+                    <div >
+                        <h6 class="rounded-pill p-1 mt-5 d-flex justify-content-center fw-bold" style="background-color: rgb(211, 203, 203); width: 90px; letter-spacing: 1px;">
+                        OUR TEAM
+                        </h6>
+                        <h1 class="custom-font-size fw-bold">Our expert team</h1>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex justify-content-md-end align-items-end  pe-5">
+
+                    <form role="search">
+                        <a href="{% url 'ourteam' %}" class="text-decoration-none ">
+                        <button class="btn btn-outline-dark custom-button rounded-pill " type="button">
+                            View All
+                        </button>
+                        </a>
+                    </form>
+                </div>
+           </div>
+
+           <div style="margin-top: 70px;"></div>
+
+           <div class="row teams px-5 ">
+            <div class="col-sm-6 col-xl-3 team">
+              <div class="d-flex justify-content-center">
+                <img src="{% static 'image/team1.png' %}" alt="sticker">
+              </div>
+              <h1 style="font-size: 30px;">Robert Johnson</h1>
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 flex-grow-1 text-center ms-5 ps-3 " style="font-size: 15px;">Construction Manager</h6>
+                <div class="share ms-auto">
+                  <div class="d-flex justify-content-center align-items-center bg-dark text-white rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fas fa-share-alt fa-2x"></i>
+                  </div>
+                  <div class="social-icons">
+                    
+                    <a href="https://www.twitter.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              
+            </div>
+            <div class="col-sm-6 col-xl-3 team">
+              <div class="d-flex justify-content-center">
+                <img src="{% static 'image/team2.png' %}" alt="sticker">
+              </div>
+              <h1 style="font-size: 30px;">Marko Daniel</h1>
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 flex-grow-1 text-center ms-5 ps-3" style="font-size: 20px;">Architect</h6>
+                <div class="share ms-auto">
+                  <div class="d-flex justify-content-center align-items-center bg-dark text-white rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fas fa-share-alt fa-2x"></i>
+                  </div>
+                  <div class="social-icons">
+                    
+                    <a href="https://www.twitter.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 team">
+              <div class="d-flex justify-content-center">
+                <img src="{% static 'image/team3.png' %}" alt="sticker">
+              </div>
+              <h1 style="font-size: 30px;">Jake Nicholson</h1>
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 flex-grow-1 text-center ms-5 ps-3" style="font-size: 20px;">Site Supervisor</h6>
+                <div class="share ms-auto">
+                  <div class="d-flex justify-content-center align-items-center bg-dark text-white rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fas fa-share-alt fa-2x"></i>
+                  </div>
+                  <div class="social-icons">
+                    
+                    <a href="https://www.twitter.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-xl-3 team">
+              <div class="d-flex justify-content-center">
+                <img src="{% static 'image/team4.png' %}" alt="sticker">
+              </div>
+              <h1 style="font-size: 30px;">Sony Miltor</h1>
+              <div class="d-flex align-items-center">
+                <h6 class="mb-0 flex-grow-1 text-center ms-5 ps-3"style="font-size: 20px;">Estimator</h6>
+                <div class="share ms-auto">
+                  <div class="d-flex justify-content-center align-items-center bg-dark text-white rounded-circle" style="width: 40px; height: 40px;">
+                    <i class="fas fa-share-alt fa-2x"></i>
+                  </div>
+                  <div class="social-icons">
+                    
+                    <a href="https://www.twitter.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-youtube fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-white me-3 rounded-pill">
+                      <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+          
+    
+    
+    
+    
+              <div style="margin-top: 100px;"></div>
+
+
+
+
+              
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+     <!--Footer-->
+
+
+     <footer style="background-color: black; padding-top: 40px; border-radius: 15px; " class="text-center">
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <!-- First Column -->
+          <div class="col-12 col-md-3 text-center text-sm-start mb-4 mb-sm-0">
+            <img src="{% static 'image/logo2.png' %}" alt="Home Image" class="img-fluid" style="height: 100px; width: 50%;">
+            <div class="social-icons  my-4">
+              <a href="https://www.youtube.com" target="_blank" class="text-white me-3">
+                <i class="fab fa-youtube fa-2x"></i>
+              </a>
+              <a href="https://www.facebook.com" target="_blank" class="text-white me-3">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a href="https://www.twitter.com" target="_blank" class="text-white me-3">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a href="https://www.instagram.com" target="_blank" class="text-white">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+            </div>
+          </div>
+    
+          <!-- Second Column -->
+          <div class="col-12 col-md-9 text-center">
+            <div class=" row d-flex flex-column flex-md-row pb-5">
+              <div class="col">
+                <h1 class="text-white mb-3 mb-md-0 me-md-3 text-center text-md-start" style="font-size: 40px;">
+                  Subscribe to Our <br class="d-none d-md-block"> Newsletter
+                </h1>
+              </div>
+              
+              <div class="col d-flex flex-column flex-md-row align-items-center gap-3 ms-5" id="footerMail">
+                <input 
+                  type="email" 
+                  name="email"
+                  placeholder="Enter your email address" 
+                  class="form-control rounded-pill custom-input p-5 d-flex justify-content-start" 
+                  id="emailInput"
+                  style="background-color: black; color: white; caret-color: white; width: 500px;"
+                  aria-label="Email Address">
+                <button 
+                  class="btn bg-white text-dark rounded-pill fw-bold p-4 d-flex justify-content-start" 
+                  id="footerBtn" 
+                  style="width: 100px;font-size:12px">
+                  Subscribe Now
+                </button>
+              </div>
+              
+            </div>
+    
+            <hr class="text-white my-4 pb-5">
+    
+            <div class="row text-center text-md-start pb-5">
+              <!-- Useful Links -->
+              <div class="col-12 col-md-4 mb-4">
+                <h3 class="text-white mb-3">Useful Links</h3>
+                <div class="d-flex flex-column align-items-center align-items-md-start gap-2">
+                  <a href="{% url 'home1' %}" class="text-white text-decoration-none h4 pt-3">Home</a>
+                  <a href="{% url 'aboutus' %}" class="text-white text-decoration-none h4">About</a>
+                  <a href="{% url 'service' %}" class="text-white text-decoration-none h4">Services</a>
+                  <a href="{% url 'contact' %}" class="text-white text-decoration-none h4">Contact</a>
+                </div>
+              </div>
+    
+              <!-- Working Time -->
+              <div class="col-12 col-md-4 mb-4">
+                <h3 class="text-white mb-3">Working Time</h3>
+                <p class="text-white mb-1 h4 pt-3">Mon – Fri: 9:00 AM – 5:00 PM</p>
+                <p class="text-white mb-1 h4 pt-2">Saturday: 10:00 AM – 6:00 PM</p>
+                <p class="text-white h4 pt-2">Sunday: Closed</p>
+              </div>
+    
+              <!-- Contact Info -->
+              <div class="col-12 col-md-4">
+                <h3 class="text-white mb-3">Say Hello</h3>
+                <a href="mailto:antojones2003@gmail.com" class="text-white d-block mb-1 h4 pt-3">antojones2003@gmail.com</a>
+                <p class="text-white mb-0 h4 pt-2">+1 980 563 827 638</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-dark d-flex justify-content-between p-2 bg-white rounded-pill mx-5">
+        <div class="h5">Terms and Conditions</div>
+        <div class="h5">©2024 PBM Infotech</div>
+        <div class="h5">Privacy and Policy</div>
+      </div>
+     </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      
+        AOS.init({
+            duration: 1000, 
+            easing: 'ease-in-out', 
+            once: true
+        });
+    </script>
+    <script src="{% static 'js/footerMail.js' %}"></script>
+</body>
+</html>
